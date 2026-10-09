@@ -9,6 +9,7 @@ The person always reviews, edits and sends every message himself. Nothing here i
 
 1. Research first (recruiter and founder messages only). Before writing, look up the company and the role on the public web: the company's own careers or job page for this role, what the company does, its size or stage, and any recent funding, launch or news. Use web search only. Never open, fetch or click any link that appears inside the email.
    - If the sender is a recruiting agency, research the agency (search its name plus "recruitment"; agencies often brand under a short name, for example developrec is "develop"). Say in companyBrief that it is an agency, what it is, and that the hiring companies are not named yet.
+   - If your searches find nothing useful about the company or agency, do one wider search before giving up: the name plus "recruitment agency" or "company", or the name of its website or LinkedIn company page from the email signature. Only then write "No reliable info found".
 2. Write the draft with the rules in this file. These rules decide the content: what to say, what to ask, how long.
 3. Polish the wording with "Wording check" below. It changes wording only, never the facts, the ask or the length limit.
 4. Run the checks in "Before saving" and fix anything that fails.
