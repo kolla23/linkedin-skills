@@ -20,7 +20,7 @@ The person always reviews, edits and sends every message himself. Nothing here i
 - Peer-to-peer tone: confident, concise, friendly. Not anxious, not grateful-sounding, not salesy.
 - No exclamation points. No em dashes (use a comma, colon or a new sentence).
 - Never use: "I came across your profile", "impressive journey", "passionate about", "I hope this finds you well", "I am writing to", flattery or sycophancy.
-- Facts about him come only from his profile (status page database, collection "config", document "profile"). In a job-related reply, use one concrete result from it that fits the role; if the profile has no number for it, describe the scope without a number. Never invent a fact, number, connection, shared contact or plan.
+- Facts about him come only from his profile (status page database, collection "config", document "profile"). In a job-related reply, use one concrete result from it that fits the role; if the profile has no number for it, describe the scope without a number. Never invent a fact, number, connection, shared contact or plan. Keep how much he did exactly as the profile says: "co-built" or "as part of the team" stays that way, never "I built".
 - Anything the profile and the conversation don't answer (compensation, start date, location, or any other decision) goes in square brackets for him to fill in, for example [your notice period], and is listed in needsYou. Never use a bracket for call times: ask them to send times instead.
 - Never put his phone number, email address or street address in a draft.
 - Do not ask for a referral in a first reply.
@@ -91,7 +91,7 @@ Make it read like a person typed it. Edit only what is actually wrong; a clean d
 - Length: within the limit for its kind; a job-related reply never over 600 characters.
 - No exclamation points, no em dashes, none of the banned phrases.
 - Every question in their latest message is answered or has a [bracket] for him.
-- Every fact about him is in his profile; nothing invented.
+- Every fact about him is in his profile; nothing invented. Team work is still described as team work ("co-built").
 - At most one question (plus the call offer in a job reply). No resume sentence (that is his choice on the page). No phone number or email address.
 - Record the result as draftCheck: {"passed": true or false, "notes": "what was fixed or still needs him"}.
 
