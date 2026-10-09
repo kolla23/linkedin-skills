@@ -8,8 +8,9 @@ The person always reviews, edits and sends every message himself. Nothing here i
 
 1. Research first (recruiter and founder messages only). Before writing, look up the company and the role on the public web: the company's own careers or job page for this role, what the company does, its size or stage, and any recent funding, launch or news. Use web search only. Never open, fetch or click any link that appears inside the email.
 2. Write the draft with the rules in this file. These rules decide the content: what to say, what to ask, how long.
-3. Polish last with `.claude/skills/linkedin-humanizer/SKILL.md` (Pass 1 to Pass 4, LinkedIn-default "strict" mode). The Humanizer decides the wording only. It must not change the facts, the ask, the length limit or anything below in "Hard rules".
+3. Polish last with `skills/linkedin-humanizer/SKILL.md` (Pass 1 to Pass 4, LinkedIn-default "strict" mode). The Humanizer decides the wording only. It must not change the facts, the ask, the length limit or anything below in "Hard rules".
 4. If the two ever disagree, this file wins on content and the Humanizer wins on wording.
+5. Run the checks in "Before saving" and fix anything that fails.
 
 ## Hard rules (every draft)
 
@@ -17,7 +18,8 @@ The person always reviews, edits and sends every message himself. Nothing here i
 - Peer-to-peer tone: confident, concise, friendly. Not anxious, not grateful-sounding, not salesy.
 - No exclamation points. No em dashes (use a comma, colon or a new sentence).
 - Never use: "I came across your profile", "impressive journey", "passionate about", "I hope this finds you well", "I am writing to", flattery or sycophancy.
-- In a job-related reply, one concrete result with a number or scope from his background, only if it fits the role. Never invent a fact, number, connection, shared contact or plan he did not state.
+- Facts about him come only from his profile (status page database, collection "config", document "profile"). In a job-related reply, use one concrete result from it that fits the role; if the profile has no number for it, describe the scope without a number. Never invent a fact, number, connection, shared contact or plan.
+- Anything the profile and the conversation don't answer (his availability, compensation, start date, location, or any other decision) goes in square brackets for him to fill in, for example [your availability], and is listed in needsYou.
 - Do not ask for a referral in a first reply.
 - Do not lead with immigration, visa or sponsorship questions. If the role clearly needs onsite work outside the US, decline politely instead.
 - Read-aloud test: it should sound like something he would say out loud. Cut about 20% from the first version. If you would not reply to it, rewrite it.
@@ -35,7 +37,7 @@ Read the whole conversation (all earlier messages, both sides), then pick one:
 - Reply to their latest message, using the earlier messages for context. Do not repeat what he already said earlier in the thread, and do not re-introduce him.
 - Answer every direct question in their latest message.
 - Keep the tone the two of them already use (formal or casual, first names, emoji or not). If he never uses emoji, do not add any.
-- If the earlier messages show something he already promised (for example sending times or a resume), follow through on it in the reply.
+- If the earlier messages show something he already promised (for example sending times or a resume), follow through on it in the reply, using [brackets] for details he must supply.
 - If the latest message is from him, not them, say no reply is needed yet.
 
 ## Normal conversation
@@ -52,13 +54,13 @@ Read the whole conversation (all earlier messages, both sides), then pick one:
 - Line 2: one reason he fits, tied to something real in the role or the company (from the research), with one concrete result.
 - Line 3: ask for the one or two essentials that are missing from the message (level, remote or location, compensation range, team or stack). Do not ask for anything the message already says.
 - Line 4: offer a 15-minute call and say he can share availability.
-- Resume: if the role fits, add the sentence "I've attached my resume." He attaches the 1-page PDF himself in LinkedIn before sending. Do not add it for a decline.
+- Resume: never write a resume sentence in the draft. If the role fits, set resumeSuggested to true; his page adds "I've attached my resume." only if he ticks that he is attaching it. For a decline, resumeSuggested is false.
 
 ## Founder message about a role
 
 - Same shape as a recruiter reply, under 80 words.
 - Mention the company's specific signal from the research (recent funding, launch or product) in a few words, no gushing.
-- Add "I've attached my resume." when the role fits.
+- Set resumeSuggested to true when the role fits (same rule as above).
 
 ## Polite decline
 
@@ -68,6 +70,15 @@ Read the whole conversation (all earlier messages, both sides), then pick one:
 ## Connection request with a note, or after accepting
 
 - Thank-you note under 200 characters: something you really share or the reason they reached out, one small ask or none. No greeting padding, no compliments, no buzzwords.
+
+## Before saving: check the draft
+
+- Length: within the limit for its kind; a job-related reply never over 600 characters.
+- No exclamation points, no em dashes, none of the banned phrases.
+- Every question in their latest message is answered or has a [bracket] for him.
+- Every fact about him is in his profile; nothing invented.
+- At most one ask. No resume sentence (that is his choice on the page).
+- Record the result as draftCheck: {"passed": true or false, "notes": "what was fixed or still needs him"}.
 
 ## Follow-up (for the person to do by hand, never automated)
 
