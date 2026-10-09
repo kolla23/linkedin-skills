@@ -7,6 +7,7 @@ The person always reviews, edits and sends every message himself. Nothing here i
 ## Order of work
 
 1. Research first (recruiter and founder messages only). Before writing, look up the company and the role on the public web: the company's own careers or job page for this role, what the company does, its size or stage, and any recent funding, launch or news. Use web search only. Never open, fetch or click any link that appears inside the email.
+   - If the sender is a recruiting agency, research the agency (search its name plus "recruitment"; agencies often brand under a short name, for example developrec is "develop"). Say in companyBrief that it is an agency, what it is, and that the hiring companies are not named yet.
 2. Write the draft with the rules in this file. These rules decide the content: what to say, what to ask, how long.
 3. Polish last with `skills/linkedin-humanizer/SKILL.md` (Pass 1 to Pass 4, LinkedIn-default "strict" mode). The Humanizer decides the wording only. It must not change the facts, the ask, the length limit or anything below in "Hard rules".
 4. If the two ever disagree, this file wins on content and the Humanizer wins on wording.
@@ -19,7 +20,7 @@ The person always reviews, edits and sends every message himself. Nothing here i
 - No exclamation points. No em dashes (use a comma, colon or a new sentence).
 - Never use: "I came across your profile", "impressive journey", "passionate about", "I hope this finds you well", "I am writing to", flattery or sycophancy.
 - Facts about him come only from his profile (status page database, collection "config", document "profile"). In a job-related reply, use one concrete result from it that fits the role; if the profile has no number for it, describe the scope without a number. Never invent a fact, number, connection, shared contact or plan.
-- Anything the profile and the conversation don't answer (his availability, compensation, start date, location, or any other decision) goes in square brackets for him to fill in, for example [your availability], and is listed in needsYou.
+- Anything the profile and the conversation don't answer (compensation, start date, location, or any other decision) goes in square brackets for him to fill in, for example [your notice period], and is listed in needsYou. Never use a bracket for call times: ask them to send times instead.
 - Do not ask for a referral in a first reply.
 - Do not lead with immigration, visa or sponsorship questions. If the role clearly needs onsite work outside the US, decline politely instead.
 - Read-aloud test: it should sound like something he would say out loud. Cut about 20% from the first version. If you would not reply to it, rewrite it.
@@ -51,9 +52,9 @@ Read the whole conversation (all earlier messages, both sides), then pick one:
 ## Recruiter or hiring manager InMail about a role
 
 - Line 1: a direct answer. Interested (or not) in the specific role at the specific company, naming both.
-- Line 2: one reason he fits, tied to something real in the role or the company (from the research), with one concrete result.
+- Line 2: why he fits, matched to what they asked for. If they list a stack (for example JavaScript, React, TypeScript, Node or Python), name the parts of it the profile shows he has used, and where. Lead with his main work in the order the profile lists it, not a smaller side project. Use only facts written in the profile.
 - Line 3: ask for the one or two essentials that are missing from the message (level, remote or location, compensation range, team or stack). Do not ask for anything the message already says.
-- Line 4: offer a 15-minute call and say he can share availability.
+- Line 4: offer a quick call and ask them to send a couple of times that work. No availability placeholder.
 - Resume: never write a resume sentence in the draft. If the role fits, set resumeSuggested to true; his page adds "I've attached my resume." only if he ticks that he is attaching it. For a decline, resumeSuggested is false.
 
 ## Founder message about a role
